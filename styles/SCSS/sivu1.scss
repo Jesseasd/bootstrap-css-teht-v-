@@ -70,11 +70,11 @@ a {
     color: $secondary-color;
     border: 1px solid $secondary-color;
     border-radius: 10px;
-    height: 200px;
     background-color: rgba(0, 0, 0, 0.8);
     padding-top: 50px;
     padding-right: 50px;
     padding-left: 50px;
+    padding-bottom: 50px;
     margin-top: 50px;
 }
 
@@ -110,11 +110,24 @@ h1 {
 
 #container2 {
     display: none;
+
     #clickable2 {
         display: none;
     }
     
     #clickable2:checked + label > img {
+        border-radius: 50%;
+    }
+}
+
+#container3 {
+    display: none;
+
+    #clickable3 {
+        display: none;
+    }
+    
+    #clickable3:checked + label > img {
         border-radius: 50%;
     }
 }
@@ -164,12 +177,56 @@ h1 {
     }
 }
 
-@media only screen and (max-width: 512px) {
-    #text-content {
-        height: 320px;
+@media only screen and (max-width: 548px) {
+    #container3 {
+        display: block;
     }
 
+    #container2 {
+        display: none;
+    }
+
+    .col-12 {
+        text-align: unset;
+    }
+
+    #heading, #bg-div, #text-box {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 496px) {
     #text-box {
         height: 350px;
+    }
+}
+
+@media only screen and (max-width: 474px) {
+    #text-box {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 422px) {
+    #text-box {
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    #text-box {
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 356px) {
+    #text-box {
+        height: 550px;
+    }
+}
+
+@media only screen and (max-width: 338px) {
+    #text-box {
+        height: 600px;
     }
 }
